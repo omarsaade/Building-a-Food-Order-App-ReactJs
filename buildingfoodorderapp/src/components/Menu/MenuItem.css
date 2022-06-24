@@ -1,0 +1,45 @@
+.menuItem .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuItem .second {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+}
+
+.first .name {
+  font-weight: bold;
+}
+
+.first .amount {
+  padding-right: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.second .details {
+  font-style: italic;
+}
+
+.third .price {
+  color: rgb(180, 120, 10);
+  font-weight: 800;
+}
+
+.second .button {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgb(101, 8, 8);
+  overflow: hidden;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  width: 120px;
+}

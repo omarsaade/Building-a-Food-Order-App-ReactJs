@@ -1,0 +1,9 @@
+.menu {
+  height: 400px;
+  background-color: white;
+  padding: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 40px;
+  border-radius: 14px;
+}
