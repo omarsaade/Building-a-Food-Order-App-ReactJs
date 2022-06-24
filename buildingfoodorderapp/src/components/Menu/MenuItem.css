@@ -1,3 +1,7 @@
+.menuItem {
+  margin-top: 15px;
+}
+
 .menuItem .first {
   display: flex;
   justify-content: space-between;

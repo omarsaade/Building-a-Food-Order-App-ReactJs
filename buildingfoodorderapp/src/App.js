@@ -6,10 +6,10 @@ import './App.css'
 
 
 const initialFood = [
-  { name: 'Sushi', details: 'finest fish and veggies', price: 22.99, amount: 1 },
-  { name: 'Schntizel', details: 'A german specialty', price: 16.50, amount: 1 },
-  { name: 'Barbecue Burger', details: 'American , raw , meaty', price: 12.99, amount: 1 },
-  { name: 'Green Bowl', details: 'Healty..and green..', price: 18.99, amount: 1 },
+  { id: 1, name: 'Sushi', details: 'finest fish and veggies', price: 22.99, amount: 1 },
+  { id: 2, name: 'Schntizel', details: 'A german specialty', price: 16.50, amount: 1 },
+  { id: 3, name: 'Barbecue Burger', details: 'American , raw , meaty', price: 12.99, amount: 1 },
+  { id: 4, name: 'Green Bowl', details: 'Healty..and green..', price: 18.99, amount: 1 },
 ];
 
 // function reducer 1
@@ -35,12 +35,11 @@ function App() {
 
 
 
-
   return (
     <Fragment>
       <Header />
       <TextBox />
-      <Menu />
+      <Menu order={food} />
     </Fragment>
   )
 }
