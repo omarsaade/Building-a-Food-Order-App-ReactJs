@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  background-color: rgb(167, 29, 29);
+  align-items: center;
+}
+
+.header .title {
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bigC {
+  width: 200px;
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: rgb(45, 44, 44);
+  display: flex;
+  justify-content: space-around;
+}
+
+.bigC .icon {
+  color: aliceblue;
+}
+
+.bigC .cart {
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.bigC .number {
+  color: aliceblue;
+  font-weight: bold;
+  background-color: rgb(102, 10, 10);
+  width: 30px;
+  text-align: center;
+  border-radius: 14px;
+}

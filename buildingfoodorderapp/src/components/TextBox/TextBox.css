@@ -1,0 +1,24 @@
+.box {
+  align-content: space-around;
+  width: 700px;
+  border-radius: 8px;
+  background-color: rgb(59, 53, 53);
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.box .t1,
+.t2,
+.t3 {
+  color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: larger;
+}
+
+.box .t1 {
+  text-align: center;
+  font-size: xx-large;
+}
