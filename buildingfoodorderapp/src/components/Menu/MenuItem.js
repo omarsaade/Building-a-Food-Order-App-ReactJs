@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import ThemeContext from '../ContextEX/ThemeContext';
 import './MenuItem.css'
 
 function MenuItem(props) {
+
+    const user = useContext(ThemeContext);
+
+
+
     return (
         <div className='menuItem'>
             <div className='first'>
@@ -14,7 +20,7 @@ function MenuItem(props) {
 
             <div className='second'>
                 <span className='details'>{props.details}</span>
-                <button className='button'>+ Add</button>
+                <button className='button' onClick={user.addnumbero} >+ Add</button>
             </div>
 
             <div className='third'>
@@ -25,4 +31,4 @@ function MenuItem(props) {
     )
 }
 
-export default MenuItem
+export default MenuItem;
