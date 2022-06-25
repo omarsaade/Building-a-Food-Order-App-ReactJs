@@ -12,8 +12,9 @@ function Menu(props) {
 
     return (
         <div className='menu'>
-            {props.order.map(expense => (
+            {props.order.map((expense) => (
                 <MenuItem
+                    keyo={expense.id}
                     key={expense.id}
                     name={expense.name}
                     amount={expense.amount}

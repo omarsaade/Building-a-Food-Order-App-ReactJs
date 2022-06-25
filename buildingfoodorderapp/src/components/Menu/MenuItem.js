@@ -20,7 +20,7 @@ function MenuItem(props) {
 
             <div className='second'>
                 <span className='details'>{props.details}</span>
-                <button className='button' onClick={user.addnumbero} >+ Add</button>
+                <button className='button' onClick={event => user.addnumber(event, `${props.keyo}`)} >+ Add</button>
             </div>
 
             <div className='third'>

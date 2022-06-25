@@ -7,25 +7,29 @@ import ThemeContext from './components/ContextEX/ThemeContext'
 
 
 
+
 function App() {
 
-  const initialFood = [
+
+
+
+  const [food, setFood] = useState([
     { id: 1, name: 'Sushi', details: 'finest fish and veggies', price: 22.99, amount: 1 },
     { id: 2, name: 'Schntizel', details: 'A german specialty', price: 16.50, amount: 1 },
     { id: 3, name: 'Barbecue Burger', details: 'American , raw , meaty', price: 12.99, amount: 1 },
     { id: 4, name: 'Green Bowl', details: 'Healty..and green..', price: 18.99, amount: 1 },
-  ];
-
-
-  const [food, setFood] = useState(initialFood);
+  ]);
 
 
 
-  const addnumber = () => {
-    console.log("hello");
-    // console.log(food);
+  const addnumber = (event, key) => {
+
+    let newArr = [...food];
+
+    let a = newArr[key - 1];
+    a.amount++;
+
     setFood((prevState) => {
-      // console.log(prevState);
       return [...prevState];
     });
 
@@ -33,7 +37,7 @@ function App() {
 
 
   return (
-    <ThemeContext.Provider value={{ 'addnumbero': addnumber, ordero: food }} >
+    <ThemeContext.Provider value={{ addnumber }} >
       <React.Fragment>
         <Header />
         <TextBox />

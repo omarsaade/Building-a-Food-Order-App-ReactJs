@@ -2,8 +2,7 @@ import React from 'react'
 
 const ThemeContext = React.createContext({
 
-    addnumbero: () => { },
-    'order': 'null'
+    addnumber: (event, key) => { },
 });
 
 export default ThemeContext
