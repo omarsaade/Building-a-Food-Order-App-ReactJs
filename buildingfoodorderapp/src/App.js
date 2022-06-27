@@ -41,9 +41,13 @@ function App() {
     setVisible(true);
   }
 
+  const handleClose = () => {
+    setVisible(false);
+
+  }
 
   return (
-    <ThemeContext.Provider value={{ addnumber, popup }} >
+    <ThemeContext.Provider value={{ addnumber, popup, handleClose }} >
       <React.Fragment>
         {visible && <Display yes={visible} />}
         <Header />
