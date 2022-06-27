@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef, useEffect } from 'react'
 import ThemeContext from '../ContextEX/ThemeContext';
 import './MenuItem.css'
 
@@ -8,19 +8,20 @@ function MenuItem(props) {
 
 
 
+
     return (
         <div className='menuItem'>
             <div className='first'>
                 <span className='name'>{props.name}</span>
                 <div>
                     <span className='name'>Amount</span>
-                    <span className='amount'>{props.amount}</span>
+                    <input className='amount' type="number" value={props.amount} onChange={event => user.addnumber(props.z)} />
                 </div>
             </div>
 
             <div className='second'>
                 <span className='details'>{props.details}</span>
-                <button className='button' onClick={event => user.addnumber(event, `${props.keyo}`)} >+ Add</button>
+                <button className='button' onClick={event => user.addnumber(props.z)} >+ Add</button>
             </div>
 
             <div className='third'>

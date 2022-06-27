@@ -4,6 +4,7 @@ import TextBox from './components/TextBox/TextBox'
 import Menu from './components/Menu/Menu'
 import './App.css'
 import ThemeContext from './components/ContextEX/ThemeContext'
+import { Display } from './components/Display/Display'
 
 
 
@@ -21,24 +22,30 @@ function App() {
   ]);
 
 
+  const [visible, setVisible] = useState(false);
 
-  const addnumber = (event, key) => {
 
+
+
+  const addnumber = (key) => {
     let newArr = [...food];
-
     let a = newArr[key - 1];
     a.amount++;
-
     setFood((prevState) => {
       return [...prevState];
     });
+  }
 
+
+  const popup = () => {
+    setVisible(true);
   }
 
 
   return (
-    <ThemeContext.Provider value={{ addnumber }} >
+    <ThemeContext.Provider value={{ addnumber, popup }} >
       <React.Fragment>
+        {visible && <Display yes={visible} />}
         <Header />
         <TextBox />
         <Menu order={food} />
