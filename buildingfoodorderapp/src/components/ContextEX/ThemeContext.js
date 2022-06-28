@@ -3,7 +3,10 @@ import React from 'react'
 const ThemeContext = React.createContext({
 
     addnumber: (event, key) => { },
-    popup: () => { }
+    decnumber: (event, key) => { },
+    popup: () => { },
+    handleClose: () => { },
+    food: null
 });
 
 export default ThemeContext

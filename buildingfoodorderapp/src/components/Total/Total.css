@@ -1,0 +1,54 @@
+.c {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.d {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.order {
+  margin-left: 20px;
+  margin-right: -40px;
+  background-color: white;
+  border: none;
+  color: rgb(101, 8, 8);
+  border-radius: 15px;
+  border: 1px solid rgb(101, 8, 8);
+  padding: 8px;
+  font-size: 15px;
+}
+
+.close {
+  background-color: white;
+  border: none;
+  color: rgb(101, 8, 8);
+  border-radius: 15px;
+  border: 1px solid rgb(101, 8, 8);
+  padding: 8px;
+  font-size: 15px;
+}
+
+.close:hover {
+  background-color: rgb(101, 8, 8);
+  color: white;
+}
+
+.order:hover {
+  background-color: rgb(101, 8, 8);
+  color: white;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.p {
+  font-weight: 900;
+  color: black;
+}

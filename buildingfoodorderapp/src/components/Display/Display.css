@@ -10,11 +10,12 @@
 .modal-main {
   position: fixed;
   background: white;
-  width: 60%;
-  height: 50%;
+  width: 40%;
+  height: max-content;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 20px;
 }
 
 .display-block {
@@ -23,4 +24,27 @@
 
 .display-none {
   display: none;
+}
+
+.btn {
+  line-height: 12px;
+  width: 80px;
+  font-size: 8pt;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1px;
+  margin-right: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  font-size: medium;
+  border: none;
+  border-radius: 20px;
+}
+
+.bi {
+  margin-top: 40px;
+  margin-left: 20px;
 }
