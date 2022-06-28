@@ -24,6 +24,7 @@
   background-color: rgb(45, 44, 44);
   display: flex;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 .bigC .icon {

@@ -6,6 +6,7 @@ const ThemeContext = React.createContext({
     decnumber: (event, key) => { },
     popup: () => { },
     handleClose: () => { },
+    stop: () => { },
     food: null
 });
 

@@ -7,6 +7,7 @@ function Cart(props) {
     const user = useContext(ThemeContext)
     return (
         <div>
+
             <div className='a'>
                 <span className='name'>{props.name}</span>
                 <div className='st'>
