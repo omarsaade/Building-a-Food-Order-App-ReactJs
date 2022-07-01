@@ -16,7 +16,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.bigC {
+.container {
   width: 200px;
   padding: 10px;
   height: 30px;
@@ -27,16 +27,16 @@
   cursor: pointer;
 }
 
-.bigC .icon {
+.container .icon {
   color: aliceblue;
 }
 
-.bigC .cart {
+.container .cart {
   color: aliceblue;
   font-weight: bold;
 }
 
-.bigC .number {
+.container .number {
   color: aliceblue;
   font-weight: bold;
   background-color: rgb(102, 10, 10);

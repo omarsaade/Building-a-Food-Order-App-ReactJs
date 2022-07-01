@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { Fragment, useContext } from 'react'
 import './Cart.css'
 import ThemeContext from '../ContextEX/ThemeContext'
 
@@ -6,13 +6,12 @@ import ThemeContext from '../ContextEX/ThemeContext'
 function Cart(props) {
     const user = useContext(ThemeContext)
     return (
-        <div>
-
+        <Fragment>
             <div className='a'>
                 <span className='name'>{props.name}</span>
                 <div className='st'>
-                    <button className='dec' onClick={event => user.decnumber(props.z)}>-</button>
-                    <button className='inc' onClick={event => user.addnumber(props.z)}>+</button>
+                    <button className='dec' onClick={event => user.decreaseNumber(event, props.numb)}>-</button>
+                    <button className='inc' onClick={event => user.increaseNumber(props.numb)}>+</button>
                 </div>
             </div>
 
@@ -21,7 +20,7 @@ function Cart(props) {
                 <span className='qty'> × {props.amount}</span>
             </div>
             <hr className='hr' />
-        </div>
+        </Fragment>
     )
 }
 
