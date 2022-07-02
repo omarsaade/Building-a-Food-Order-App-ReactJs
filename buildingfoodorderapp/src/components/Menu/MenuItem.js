@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import ThemeContext from '../ContextEX/ThemeContext';
-import './MenuItem.css'
+import classes from './MenuItem.module.css';
 
 function MenuItem(props) {
 
@@ -10,22 +10,22 @@ function MenuItem(props) {
 
 
     return (
-        <div className='menuItem'>
-            <div className='first'>
-                <span className='name'>{props.name}</span>
+        <div className={classes.menuItem}>
+            <div className={classes.first}>
+                <span className={classes.name}>{props.name}</span>
                 <div>
-                    <span className='name'>Amount</span>
-                    <input className='amount' min="0" type="number" value={props.amount} onChange={event => user.increaseNumber(props.serialNumber)} />
+                    <span className={classes.name}>Amount</span>
+                    <input className={classes.amount} min="0" type="number" value={props.amount} onChange={event => user.increaseNumber(props.serialNumber)} />
                 </div>
             </div>
 
-            <div className='second'>
-                <span className='details'>{props.details}</span>
-                <button className='button' onClick={event => user.increaseNumber(props.serialNumber)} >+ Add</button>
+            <div className={classes.second}>
+                <span className={classes.details}>{props.details}</span>
+                <button className={classes.button} onClick={event => user.increaseNumber(props.serialNumber)} >+ Add</button>
             </div>
 
-            <div className='third'>
-                <span className='price'>{props.price}$</span>
+            <div className={classes.third}>
+                <span className={classes.price}>{props.price}$</span>
             </div>
             <hr></hr>
         </div>

@@ -2,11 +2,12 @@ import React, { useContext } from 'react';
 import ThemeContext from '../ContextEX/ThemeContext';
 import Cart from '../Cart/Cart';
 import TotalBox from '../Total/TotalBox';
-import './Display.css';
+import classes from './DisplayBox.module.css';
+
 
 export const DisplayBox = (props) => {
     const user = useContext(ThemeContext)
-    const showHideClassName = props.visibility ? "modal display-block" : "modal display-none";
+
 
 
     const foodDisplays = user.Food.map((item) => (
@@ -23,10 +24,10 @@ export const DisplayBox = (props) => {
 
 
     return (
-        <div className={showHideClassName}>
-            <div className="modal-main">
-                <button type="button" className="btn" onClick={() => user.setVisible(false)}>Close</button>
-                <div className='bi'>
+        <div className={classes.backdrop}>
+            <div className={classes.modalmain} >
+                <button type="button" className={classes.btn} onClick={() => user.setVisible(false)}>Close</button>
+                <div className={classes.display}>
                     {foodDisplays}
                     <TotalBox />
                 </div>

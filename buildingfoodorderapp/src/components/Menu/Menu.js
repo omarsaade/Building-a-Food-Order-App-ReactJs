@@ -1,6 +1,8 @@
 import React from 'react'
-import './Menu.css'
+import classes from './Menu.module.css';
 import MenuItem from './MenuItem'
+
+
 
 
 
@@ -15,7 +17,7 @@ function Menu(props) {
 
 
     return (
-        <div className='menu'>
+        <div className={classes.menu}>
             {list}
         </div>
     )

@@ -1,5 +1,5 @@
 import React, { Fragment, useContext } from 'react'
-import './Total.css'
+import classes from './TotalBox.module.css';
 import ThemeContext from '../ContextEX/ThemeContext';
 
 function TotalBox() {
@@ -13,15 +13,15 @@ function TotalBox() {
 
     return (
         <Fragment>
-            <div className='c'>
-                <span className='total'>Total Amount</span>
-                <span className='p'>{totalPrice}</span>
+            <div className={classes.totalb}>
+                <span className={classes.total}>Total Amount</span>
+                <span className={classes.price}>{totalPrice}</span>
             </div>
-            <div className='d'>
+            <div className={classes.d}>
                 <div></div>
                 <div >
-                    <button className='close' onClick={() => user.setVisible(false)}>Close</button>
-                    <button className='order'>Order</button>
+                    <button className={classes.close} onClick={() => user.setVisible(false)}>Close</button>
+                    <button className={classes.order}>Order</button>
                 </div>
             </div>
         </Fragment>
